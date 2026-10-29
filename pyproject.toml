@@ -1,0 +1,24 @@
+[project]
+name = "taskflow-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "muhseenap8io", email = "muhseena.t@p8.io" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "alembic>=1.20.0",
+    "fastapi[standard]>=0.141.1",
+    "greenlet>=3.5.6",
+    "pydantic-settings>=2.15.0",
+    "sqlalchemy>=2.0.54",
+]
+
+[project.scripts]
+taskflow-api = "taskflow_api:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
